@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+          content="Pagina Tutorial sobre la instalación de Windows Server y algunos de sus servicios">
+    <meta name="author" content="MelissaBarrera">
+
+    <!-- Website Title -->
+    <title>Windows Server</title>
+
+    <!-- Styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Favicon  -->
+    <link rel="icon" type="image/x-icon" href="images/lg.png"/>
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+<!-- Preloader -->
+<div class="spinner-wrapper">
+    <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+</div>
+<!-- end of preloader -->
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.png"
+                                                                  style="width:200px; height: 50px"></a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="index.html">Página principal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="principalWN.html">Inicio Windows Server<span class="sr-only">(current)</span></a>
+                </li>
+
+                <!-- Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">Tutorial Windows Server</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="instalaciónWN.html"><span class="item-text">Instalación</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="configuraciónWN.html"><span class="item-text">Configuración Inicial</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="DNSWN.html"><span class="item-text">DNS</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="DHCPWN.html"><span class="item-text">DHCP</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="FTPWN.html"><span class="item-text">FTP</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="SMTPWN.html"><span class="item-text">SMTP</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="HTTPWN.html"><span class="item-text">HTTP</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+            </ul>
+        </div>
+    </div> <!-- end of container -->
+</nav> <!-- end of navbar -->
+<!-- end of navigation -->
+
+<!-- Header -->
+<header id="header" class="ex-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>SERVIDOR DHCP</h1>
+                <p class="p-large">Es un protocolo de red utilizado para la asignación automática de direcciones IP y
+                    otros parámetros de configuración de red a los dispositivos conectados a una red. En Windows Server,
+                    el servicio DHCP es una función incorporada que permite a los administradores de red asignar
+                    automáticamente direcciones IP a los dispositivos conectados a la red, lo que simplifica y agiliza
+                    la administración de la red.
+                </p>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</header> <br>
+<!-- end of header -->
+
+<!-- Images -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/Configuracion/AD1.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">En el programa Administrador del servidor dar clic en <b>Administrar</b> y
+                        posteriormente en <b>Agregar roles y caracteristicas</b> para poder agregar el servidor DHCP a
+                        Windows Server</p>                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DHCP/DCHP1.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">En el apartado de Roles del servidor seleccionar <b>Servidor DHCP</b>
+                        y dar clic en siguiente.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DHCP/DCHP2.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">
+                        Luego de seleccionar el servidor DHCP, avanzar sin modificar las caracteristicas predeterminadas
+                        hasta la ventana de Confirmar selecciones de instalación y dar clic en <b>instalar</b>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DHCP/DCHP3.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Cuando finalice la instalación básica del servidor DHCP, dar clic en
+                        <b>Completar configuración de DHCP</b>.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DHCP/DCHP4.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">En esta ventana, solo se debe confirmar que el nombre del usuario corresponda al
+                     nombre del administrador del Windows Server.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DHCP/DCHP5.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">Luego de confirmar la instalación del DHCP, en el administrador de este mismo servidor
+                     dar clic derecho sobre el registro y luego dar clic en <b>Administrador DHCP</b>.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DHCP/DCHP6.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Dar clic derecho sobre IPv4, ya que este es el protocolo de red sobre el cual se
+                         esta trabajando con la IP estática y luego dar clic en <b>Ámbito nuevo</b>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DHCP/DCHP7.png" class="card-img-top" style="width: 87%">
+                <div class="card-body">
+                    <p class="card-text">Asignar un nombre y una descripción al ambito DHCP y dar clic en siguiente</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DHCP/DCHP8.png" class="card-img-top" style="width: 87%">
+                <div class="card-body">
+                    <p class="card-text">Ingresar un rango de direcciones IP válido para distribuir dentro del ambito
+                        DHCP y dar clic en siguiente. En este caso no es necesario excluir direcciones IP de la asignación,
+                         pero si se necesita se deben ingresar en la ventana pertinente.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DHCP/DCHP9.png" class="card-img-top" style="width: 87%">
+                <div class="card-body">
+                    <p class="card-text">En la ventana de Duración de la concesión, establecer la duración de las direcciones
+                     IP asignables y dar clic en siguiente</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DHCP/DCHP10.png" class="card-img-top" style="width: 87%">
+                <div class="card-body">
+                    <p class="card-text">Seleccionar <b>Configurar estas opciones ahora</b> y dar clic en siguiente.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DHCP/DCHP11.png" class="card-img-top" style="width: 87%">
+                <div class="card-body">
+                    <p class="card-text">En la ventana de Enrutador, ingresar la dirección IP de la puerta de enlace que
+                    se configuró inicialmente y dar clic en siguiente.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DHCP/DCHP12.png" class="card-img-top" style="width: 87%">
+                <div class="card-body">
+                    <p class="card-text">Validar que el dominio primario y la dirección IP sean correctos, sino es así
+                    verificar y cambiar la información. Luego, dar clic en siguiente.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DHCP/DCHP13.png" class="card-img-top" style="width: 87%">
+                <div class="card-body">
+                    <p class="card-text">Seleccionar <b>Activar este ámbito ahora</b> y dar clic en siguiente.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DHCP/DCHP14.png" class="card-img-top" style="width: 87%">
+                <div class="card-body">
+                    <p class="card-text">Avanzar en las ventanas del Asistente para ámbito nuevo hasta la Finalizacion del
+                    asistente y dar clic en <b>finalizar</b>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DHCP/DCHP15.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">Finalmente, para verificar si el ámbito se instalo correctamente se debe crear una
+                        carpeta dentro de IPv4 como se observa en la imagen.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+</div>
+
+<!-- Copyright -->
+<svg class="footer-frame" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+     viewBox="0 0 1920 79">
+    <defs>
+        <style>.cls-2 {
+            fill: #FFBFF6;
+        }</style>
+    </defs>
+    <title>footer-frame</title>
+    <path class="cls-2"
+          d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z"
+          transform="translate(0 -0.188)"></path>
+</svg>
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="p-small">Copyright © 2023. Create by Melissa Barrera</p>
+            </div> <!-- end of col -->
+        </div> <!-- enf of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of copyright -->
+<!-- end of copyright -->
+
+
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+<script src="js/scripts.js"></script> <!-- Custom scripts -->
+
+</body>
+</html>

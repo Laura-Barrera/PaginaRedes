@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+          content="Pagina Tutorial sobre la instalación de Linux Server y algunos de sus servicios">
+    <meta name="author" content="MelissaBarrera">
+
+    <!-- Website Title -->
+    <title>Linux Server</title>
+
+    <!-- Styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Favicon  -->
+    <link rel="icon" type="image/x-icon" href="images/lg.png"/>
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+<!-- Preloader -->
+<div class="spinner-wrapper" style="background-color: #A5FFF3">
+    <div class="spinner">
+        <div class="bounce1" style="background-color: white"></div>
+        <div class="bounce2" style="background-color: white"></div>
+        <div class="bounce3" style="background-color: white"></div>
+    </div>
+</div>
+<!-- end of preloader -->
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" style="background-color: #A5FFF3">
+    <div class="container">
+        <a class="navbar-brand logo-image" href="principalLX.html"><img src="images/logoLinux.png"
+                                                                        style="width:200px; height: 80px"></a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="index.html">Página principal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="principalLX.html">Inicio Linux Server<span class="sr-only">(current)</span></a>
+                </li>
+
+                <!-- Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">Tutorial Linux Server</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="instalacionLX.html"><span class="item-text">Instalación</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="configuracionLX.html"><span class="item-text">Configuración Inicial</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="DNSLX.html"><span class="item-text">DNS</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="DHCPLX.html"><span class="item-text">DHCP</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="FTPLX.html"><span class="item-text">FTP</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="SMTPLX.html"><span class="item-text">SMTP</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="HTTPLX.html"><span class="item-text">HTTP</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+            </ul>
+        </div>
+    </div> <!-- end of container -->
+</nav> <!-- end of navbar -->
+<!-- end of navigation -->
+
+<!-- Header -->
+<header id="header" class="ex-header" style="background-color: #A5FFF3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>PROTOCOLO HTTP</h1>
+                <p class="p-large">Es un protocolo de comunicación utilizado para la transferencia de datos a través de
+                    la World Wide Web. <br><br>
+                    Para Linux server es necesario implementar un servidor web externo al sistema operativo para permitir
+                    la publicación de paginas o webs relacionadas directamente con la IP y el dominio del servidor. En este
+                    caso se hizo uso de Apache, un servidor web de código abierto utilizado para alojar sitios web en Internet.
+                </p>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</header> <br>
+<!-- end of header -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/HTTP/HTTP0.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Entrar a la <b>terminal</b> de linux y logearse como super usuario con el comando
+                        <b>su -l</b>. Luego con el comando <b>apt-get install apache2</b> se desargan los paquetes
+                        y archivos necesarios para configurar el servidor HTTP</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/HTTP/HTTP1.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">Automáticamente, se relacionara el dominio e IP del Linux server con la página
+                    por defecto de Apache</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/HTTP/HTTP2.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Para cambiar la pagina por defecto de Apache se deben crear host virtuales en
+                        la ruta <b>/var/wwww/</b>. Primero se debe crear un directorio principar para alojar el nuevo
+                        sitio web y darle los permisos necesasarios.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/HTTP/HTTP3.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">Ahora se debe crear un archivo de configuración para relacionar el host virtual
+                    con el dominio asignado al Linux server con el comando <b>nano /etc/apache2/sites-avalaible/example.conf</b>
+                    y alli se configuran las lineas necesarias segun la imagen.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/HTTP/HTTP4.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Ahora se debe habilitar el nuevo host virtual con el comando <b>a2ensite example.conf</b>
+                    y deshabilitar el sitio por defecto del apache con el comando <b>a2dissite 000-default.conf</b>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/HTTP/HTTP5.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">Finalmente se restablece el servidor web apache con el comando <b>systemctl
+                    restart apache2</b></p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/HTTP/HTTP6.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Cuando se publique el nuevo host virtual y al acceder a la IP y el dominio del
+                    Linux server se podra visualizar en este caso la página realizada por el estudiante.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+</div>
+
+<!-- Copyright -->
+<svg class="footer-frame" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+     viewBox="0 0 1920 79">
+    <defs>
+        <style>.cls-2 {
+            fill: #A5FFF3;
+        }</style>
+    </defs>
+    <title>footer-frame</title>
+    <path class="cls-2"
+          d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z"
+          transform="translate(0 -0.188)"></path>
+</svg>
+<div class="copyright" style="background-color: #A5FFF3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="p-small">Copyright © 2023. Create by Melissa Barrera</p>
+            </div> <!-- end of col -->
+        </div> <!-- enf of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of copyright -->
+<!-- end of copyright -->
+
+
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+<script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>

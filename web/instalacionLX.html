@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+          content="Pagina Tutorial sobre la instalación de Linux Server y algunos de sus servicios">
+    <meta name="author" content="MelissaBarrera">
+
+    <!-- Website Title -->
+    <title>Linux Server</title>
+
+    <!-- Styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Favicon  -->
+    <link rel="icon" type="image/x-icon" href="images/lg.png"/>
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+<!-- Preloader -->
+<div class="spinner-wrapper" style="background-color: #A5FFF3">
+    <div class="spinner">
+        <div class="bounce1" style="background-color: white"></div>
+        <div class="bounce2" style="background-color: white"></div>
+        <div class="bounce3" style="background-color: white"></div>
+    </div>
+</div>
+<!-- end of preloader -->
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" style="background-color: #A5FFF3">
+    <div class="container">
+        <a class="navbar-brand logo-image" href="principalLX.html"><img src="images/logoLinux.png"
+                                                                        style="width:200px; height: 80px"></a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="index.html">Página principal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="principalLX.html">Inicio Linux Server<span class="sr-only">(current)</span></a>
+                </li>
+
+                <!-- Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">Tutorial Linux Server</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="instalacionLX.html"><span class="item-text">Instalación</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="configuracionLX.html"><span class="item-text">Configuración Inicial</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="DNSLX.html"><span class="item-text">DNS</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="DHCPLX.html"><span class="item-text">DHCP</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="FTPLX.html"><span class="item-text">FTP</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="SMTPLX.html"><span class="item-text">SMTP</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="HTTPLX.html"><span class="item-text">HTTP</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+            </ul>
+        </div>
+    </div> <!-- end of container -->
+</nav> <!-- end of navbar -->
+<!-- end of navigation -->
+
+<!-- Header -->
+<header id="header" class="ex-header" style="background-color: #A5FFF3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>INSTALACIÓN LINUX SERVER</h1>
+                <p class="p-large">La instalación de Linux Server en su distribución Debian 11 implica la realización de
+                    algunos pasos y configuraciones especificas que se realizan a través de una interfaz gráfica de
+                    usuario o mediante el uso de comandos en la línea de comandos. <br>
+                    Es importante tener instalado un programa de máquina virtual en el equipo donde se vaya a instalar el
+                    Linux Server y configurar el tipo de conexion de red como Bridge.
+                </p>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</header> <br>
+<!-- end of header -->
+
+<!-- Images -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/Instalacion/I00.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Entrar a la página oficial Debian y dar clic en <b>Descargar una imagen de instalación</b>
+                        Es importante resaltar que Debian es una de las alternativas para descargar un servidor Linux.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/Instalacion/I01.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">Seleccionar la distibución de la imagen que desea instalar, para este caso se
+                    descargo la imagen <b>amd64</b>.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/Instalacion/I0.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Cargar el archivo de Linux server en una maquina virtual y configurar las caracteristicas
+                        propias de la máquina. Seleccionar la versión de Debian que se desea instalar y dar <b>clic o enter</b>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/Instalacion/I1.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">Seleccionar el idioma del sistema que se va a instalar, para este caso Español y
+                        dar clic en <B>Continue.</B></p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/Instalacion/I2.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">Seleccionar la ubicación geográfica del equipo donde se va a instalar el servidor
+                        para relacionarlo con el tipo de teclado del equipo. Luego dar clic en <b>Continuar</b>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/Instalacion/I3.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">Validar que la configuración del teclado sea correcta y dar clic en <b>Continuar</b>.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/Instalacion/I4.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Asignar un nombre a la máquina o servidor y dar clic en <b>Continuar</b>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/Instalacion/I5.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">Asignar un dominio al servidor de Linux como se observa en la imagen y dar clic
+                    en <b>Continuar</b>.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/Instalacion/I6.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Asignar una clave al super usuario del sistema y dar clic en <b>Continuar</b>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/Instalacion/I7.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">Asignar un nombre al usuario principal con el que se va a configurar el servidor
+                        y dar clic en <b>Continuar</b>.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/Instalacion/I9.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Asignar una clave al usuario creado y dar clic en <b>Continuar</b>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/Instalacion/I10.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">Seleccionar el metodo de partición guiado en todo el disco y dar clic en
+                        <b>Continuar</b>.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/Instalacion/I11.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Seleccionar el disco local que se va a particionar para la instalación del
+                        servidor Linux y dar clic en <b>Continuar</b>.</p>                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/Instalacion/I12.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">Seleccionar agregar todos lod ficheros del sistema operativo en una sola partición
+                        y dar clic en <b>Continuar</b>.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/Instalacion/I13.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Finalizar el proceso de particionado de discos y dar clic en <b>Continuar</b>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/Instalacion/I14.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">Dar clic en escribir los cambios sobre los discos  y esperar a que se realice el
+                    proceso.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/Instalacion/I15.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Seleccionar no usar medios de instalación adicionales.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/Instalacion/I16.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">Elegir el país de replica para el gestor de paquetes, en este caso se seleccionó
+                        Estados Unidos y dar clic en <b>Continuar</b>.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/Instalacion/I17.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Seleccionar el enlace de replica <b>deb.debian.org</b> y dar cic en <b>Continuar</b>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/Instalacion/I18.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">No es necesario asignar la información de proxy para este caso, luego dar clic en
+                        <b>Continuar</b>.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/Instalacion/I19.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Permitir la descarga del GRUB o cargador de arranque del sistema operativo.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/Instalacion/I10.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">Elegir el dispositov para instalar el GRUB, dar clic en
+                        <b>Continuar</b> y esperar a que finalice por completo la instalación.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+</div>
+
+<!-- Copyright -->
+<svg class="footer-frame" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+     viewBox="0 0 1920 79">
+    <defs>
+        <style>.cls-2 {
+            fill: #A5FFF3;
+        }</style>
+    </defs>
+    <title>footer-frame</title>
+    <path class="cls-2"
+          d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z"
+          transform="translate(0 -0.188)"></path>
+</svg>
+<div class="copyright" style="background-color: #A5FFF3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="p-small">Copyright © 2023. Create by Melissa Barrera</p>
+            </div> <!-- end of col -->
+        </div> <!-- enf of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of copyright -->
+<!-- end of copyright -->
+
+
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+<script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>

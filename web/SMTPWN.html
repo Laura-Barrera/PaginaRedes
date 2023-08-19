@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+          content="Pagina Tutorial sobre la instalación de Windows Server y algunos de sus servicios">
+    <meta name="author" content="MelissaBarrera">
+
+    <!-- Website Title -->
+    <title>Windows Server</title>
+
+    <!-- Styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Favicon  -->
+    <link rel="icon" type="image/x-icon" href="images/lg.png"/>
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+<!-- Preloader -->
+<div class="spinner-wrapper">
+    <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+</div>
+<!-- end of preloader -->
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.png"
+                                                                  style="width:200px; height: 50px"></a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="index.html">Página principal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="principalWN.html">Inicio Windows Server<span class="sr-only">(current)</span></a>
+                </li>
+
+                <!-- Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">Tutorial Windows Server</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="instalaciónWN.html"><span class="item-text">Instalación</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="configuraciónWN.html"><span class="item-text">Configuración Inicial</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="DNSWN.html"><span class="item-text">DNS</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="DHCPWN.html"><span class="item-text">DHCP</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="FTPWN.html"><span class="item-text">FTP</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="SMTPWN.html"><span class="item-text">SMTP</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="HTTPWN.html"><span class="item-text">HTTP</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+            </ul>
+        </div>
+    </div> <!-- end of container -->
+</nav> <!-- end of navbar -->
+<!-- end of navigation -->
+
+<!-- Header -->
+<header id="header" class="ex-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>SERVIDOR SMTP</h1>
+                <p class="p-large">Es un protocolo de red utilizado para enviar correos electrónicos a través de la red.
+                    En Windows Server, el servicio SMTP está disponible a través del IIS (Internet Information Services),
+                    que permite a los usuarios enviar correos electrónicos a través de un servidor SMTP o tambien se
+                    puede utilizar haciendo uso de aplicaciones externas.<BR>
+                    En este caso se hizo uso desde el Windows Server de VisendoSMTP, una aplicación de software basada
+                    en el correo electrónico que pretende sustituir a un servidor POP3 ausente que está asociado a
+                    sistemas operativos específicos. También actúa como un "puente" que puede adaptarse a los protocolos
+                    normales de correo electrónico. Por otro lado, también se utilizo desde el cliente Foxmail, un Foxmail
+                    un práctico gestor de correo, una alternativa a Outlook fácil de usar y que ofrece las funciones
+                    habituales para enviar y recibir mensajes, guardar los datos de tus contactos y configurar alarmas.
+                </p>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</header> <br>
+<!-- end of header -->
+
+<!-- Images -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/Configuracion/AD1.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">En el programa Administrador del servidor dar clic en <b>Administrar</b> y
+                        posteriormente en <b>Agregar roles y caracteristicas</b> para poder agregar el servidor SMTP a
+                        Windows Server</p>                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/SMTP/SMTP1.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">En el apartado de Roles del servidor seleccionar el <b>Servidor SMTP</b> y dar
+                        clic en siguiente.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/SMTP/SMTP2.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">
+                        Luego de seleccionar el servidor SMTP, avanzar sin modificar las caracteristicas predeterminadas
+                        hasta la ventana de Confirmar selecciones de instalación y dar clic en <b>instalar</b>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/SMTP/SMTP3.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Luego, desde el Administrador del servidor dar clic en herramientas y seleccionar
+                        <b>IIS 6.0</b>.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/SMTP/SMTP4.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">En el Administrador IIS 6.0 dar clic derecho sobre el servidor, luego en nuevo
+                        y seleccionar <b>Servidor virtual SMTP</b>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/SMTP/SMTP5.png" class="card-img-top" style="width: 87%">
+                <div class="card-body">
+                    <p class="card-text">En el asistente para el nuevo servidor virtual SMTP escribir el nombre del servidor
+                        y dar clic en siguiente.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/SMTP/SMTP6.png" class="card-img-top" style="width: 87%">
+                <div class="card-body">
+                    <p class="card-text">Seleccionar la IP que corresponda al servidor principal que se va a asociar con
+                    el servidor SMTP.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/SMTP/SMTP7.png" class="card-img-top" style="width: 87%">
+                <div class="card-body">
+                    <p class="card-text">Seleccionar la carpeta raiz creada por defecto por el servidor SMTP, que esta en
+                        la ruta <b>C:\inepub\mailroot</b>.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/SMTP/SMTP8.png" class="card-img-top" style="width: 87%">
+                <div class="card-body">
+                    <p class="card-text">Escribir el dominio asociado al servidor SMTP y dar clic en <b>finalizar</b>.
+                    Además, se debe desactivar el servidor virtual de SMTP creado por defecto durante la instalación del
+                    servidor y solo dejar activo el que se ha creado manualmente.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/SMTP/SMTP9.png" class="card-img-top" style="width: 87%">
+                <div class="card-body">
+                    <p class="card-text">Desde Windows Server descargar e instalar Visendo SMTP para gestionar el envio
+                    de correos electronicos con el protocolo POP3.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/SMTP/SMTP10.png" class="card-img-top" style="width: 87%">
+                <div class="card-body">
+                    <p class="card-text">Asociar un nombre y el dominio del servidor SMTP a Visendo SMTP. Luego avanzar
+                    en la instalación sin modificar las caracteristicas predeterminadas y dar clic en instalar.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/SMTP/SMTP11.png" class="card-img-top" style="width: 87%">
+                <div class="card-body">
+                    <p class="card-text">Verificar en Visendo SMTP que la direccion IP, la carpeta raiz y el puerto del
+                    programa sean correctos.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/SMTP/SMTP12.png" class="card-img-top" style="width: 87%">
+                <div class="card-body">
+                    <p class="card-text">Crear los usuarios de correo especificos desde Visendo SMTP.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/SMTP/SMTP13.png" class="card-img-top" style="width: 87%">
+                <div class="card-body">
+                    <p class="card-text">Luego de crear los usuarios de correo necesarios dar clic en <b>finish</b> para
+                    guardar los cambios.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/SMTP/SMTP14.png" class="card-img-top" style="width: 87%">
+                <div class="card-body">
+                    <p class="card-text">Instalar Foxmail en el equipo del cliente.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/SMTP/SMTP15.png" class="card-img-top" style="width: 57%">
+                <div class="card-body">
+                    <p class="card-text">Para probar el servidor SMTP desde Foxmail crear una sesión seleccionando <b>
+                        Other MailBox</b>.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/SMTP/SMTP16.png" class="card-img-top" style="width: 77%">
+                <div class="card-body">
+                    <p class="card-text">Colocar los datos correspondientes a las credenciales de acceso y el dominio o
+                    IP asociadas al Windows Server y servidor SMTP.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/SMTP/SMTP17.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">Finalmente se tiene acceso a el correo electronico y se valida que se envien y
+                        reciban mensajes de manera correcta.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+</div>
+
+<!-- Copyright -->
+<svg class="footer-frame" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+     viewBox="0 0 1920 79">
+    <defs>
+        <style>.cls-2 {
+            fill: #FFBFF6;
+        }</style>
+    </defs>
+    <title>footer-frame</title>
+    <path class="cls-2"
+          d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z"
+          transform="translate(0 -0.188)"></path>
+</svg>
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="p-small">Copyright © 2023. Create by Melissa Barrera</p>
+            </div> <!-- end of col -->
+        </div> <!-- enf of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of copyright -->
+<!-- end of copyright -->
+
+
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+<script src="js/scripts.js"></script> <!-- Custom scripts -->
+
+</body>
+</html>

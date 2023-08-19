@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+          content="Pagina Tutorial sobre la instalación de Windows Server y algunos de sus servicios">
+    <meta name="author" content="MelissaBarrera">
+
+    <!-- Website Title -->
+    <title>Windows Server</title>
+
+    <!-- Styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Favicon  -->
+    <link rel="icon" type="image/x-icon" href="images/lg.png"/>
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+<!-- Preloader -->
+<div class="spinner-wrapper">
+    <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+</div>
+<!-- end of preloader -->
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.png"
+                                                                  style="width:200px; height: 50px"></a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="index.html">Página principal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="principalWN.html">Inicio Windows Server<span class="sr-only">(current)</span></a>
+                </li>
+
+                <!-- Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">Tutorial Windows Server</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="instalaciónWN.html"><span class="item-text">Instalación</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="configuraciónWN.html"><span class="item-text">Configuración Inicial</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="DNSWN.html"><span class="item-text">DNS</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="DHCPWN.html"><span class="item-text">DHCP</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="FTPWN.html"><span class="item-text">FTP</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="SMTPWN.html"><span class="item-text">SMTP</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="HTTPWN.html"><span class="item-text">HTTP</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+            </ul>
+        </div>
+    </div> <!-- end of container -->
+</nav> <!-- end of navbar -->
+<!-- end of navigation -->
+
+<!-- Header -->
+<header id="header" class="ex-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>SERVIDOR DNS</h1>
+                <p class="p-large">Es un servicio fundamental en la infraestructura de redes y en la comunicación entre
+                    dispositivos conectados a Internet. En Windows Server, el servicio DNS permite asignar nombres de
+                    dominio a direcciones IP, lo que permite a los usuarios acceder a los recursos de red utilizando
+                    nombres de fácil recordación en lugar de tener que recordar las direcciones IP.<br>
+                    En este caso, como inicialmente se instalo el servicio de AD, el servidor DNS se instalo de manera
+                    automatica y por lo tanto solo es necesario configurarlo.
+                </p>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</header> <br>
+<!-- end of header -->
+
+<!-- Images -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DNS/DNS1.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Entrar al <b>servidor DNS</b> desde el administrador del servidor. Luego dar
+                        clic derecho sobre el registro del servidor y dar clic en <b>Administrador de DNS</b>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DNS/DNS2.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">Entrar a la zona de busqueda directa que tenga el nombre del dominio del servidor,
+                        dar clic derecho y luego dar clic en <b>Host nuevo </b>.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DNS/DNS3.png" class="card-img-top" style="width: 77%">
+                <div class="card-body">
+                    <p class="card-text">En la ventana de Host nuevo, colocar como nombre el nombre del servidor global
+                    de Windows server. Además, en la dirección IP colocar la dirección del servidor de Windows Server.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DNS/DNS4.png" class="card-img-top" style="width: 77%">
+                <div class="card-body">
+                    <p class="card-text">Ahora, dar clic derecho sobre la carpeta de <b>Zona de búsqueda inversa</b> y
+                        dar clic en <b>Zona nueva</b>. Esto se crea para que el DNS pueda asociar la dirección IP con e
+                        dominio del servidor</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DNS/DNS5.png" class="card-img-top" style="width: 87%">
+                <div class="card-body">
+                    <p class="card-text">Seleccionar que la zona funcione para todos los servidores DNS que tengan relación
+                    con el dominio principal y dar clic en siguiente.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DNS/DNS6.png" class="card-img-top" style="width: 87%">
+                <div class="card-body">
+                    <p class="card-text">Seleccionar <b>Zona de búsqueda inversa para IPV4</b> dado que la direccion estatica
+                    del servidor Windows Server esta para este mismo protocolo y dar clic en siguiente</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DNS/DNS7.png" class="card-img-top" style="width: 87%">
+                <div class="card-body">
+                    <p class="card-text">Escribir los 3 primeros valores de la dirección IP estatica en el campo de
+                        <b>Id. de red</b> y dar clic en siguiente.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DNS/DNS8.png" class="card-img-top" style="width: 87%">
+                <div class="card-body">
+                    <p class="card-text">Seleccionar <b>No admitir actualizaciones dinamicas</b> dado que al tener una IP
+                     estática para el servidor DNS no se debe actualizar su información de manera constante. Luego dar
+                    clic en siguiente.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DNS/DNS9.png" class="card-img-top" style="width: 87%">
+                <div class="card-body">
+                    <p class="card-text">Dar clic en finalizar para completar la creacion de la zona inversa.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DNS/DNS10.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text"> Luego, entrar a la carpeta creada, dar clic derecho y seleccionar <b>Nuevo puntero (PTR)</b>.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DNS/DNS11.png" class="card-img-top" style="width: 87%">
+                <div class="card-body">
+                    <p class="card-text">Seleccionar el host creado en la zona directa con anterioridad para que sea el
+                    puntero de la zona inversa.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/WN/DNS/DNS12.png" class="card-img-top" style="width: 77%">
+                <div class="card-body">
+                    <p class="card-text">Finalmente, cuando ya se tenga el nombre del host correcto, verificar que la
+                        direccion IP del host que asocio el sistema sea correcta y dar clic en aceptar.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+</div>
+
+<!-- Copyright -->
+<svg class="footer-frame" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+     viewBox="0 0 1920 79">
+    <defs>
+        <style>.cls-2 {
+            fill: #FFBFF6;
+        }</style>
+    </defs>
+    <title>footer-frame</title>
+    <path class="cls-2"
+          d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z"
+          transform="translate(0 -0.188)"></path>
+</svg>
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="p-small">Copyright © 2023. Create by Melissa Barrera</p>
+            </div> <!-- end of col -->
+        </div> <!-- enf of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of copyright -->
+<!-- end of copyright -->
+
+
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+<script src="js/scripts.js"></script> <!-- Custom scripts -->
+
+</body>
+</html>

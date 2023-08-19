@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9f927020-f9c4-4d05-8e68-86a5973ec446" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Nchaf1PiBhA0GKDq7UoYJPDrvG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Downloads/tivo/web&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\Windows Server\web\images" />
+      <recent name="C:\Users\User\WebstormProjects\Windows Server" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\Windows Server\web\images" />
+      <recent name="C:\Users\User\WebstormProjects\Windows Server\web\images\WN" />
+      <recent name="C:\Users\User\WebstormProjects\Windows Server\web" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9f927020-f9c4-4d05-8e68-86a5973ec446" name="Changes" comment="" />
+      <created>1679969342484</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679969342484</updated>
+      <workItem from="1679969343729" duration="727000" />
+      <workItem from="1679970273994" duration="16180000" />
+      <workItem from="1680022867200" duration="15770000" />
+      <workItem from="1680052353644" duration="894000" />
+      <workItem from="1680053539206" duration="23704000" />
+      <workItem from="1680099439052" duration="1317000" />
+      <workItem from="1680887439644" duration="10087000" />
+      <workItem from="1680907689916" duration="7000" />
+      <workItem from="1680962136212" duration="118000" />
+      <workItem from="1681232019448" duration="618000" />
+      <workItem from="1681337826899" duration="9707000" />
+      <workItem from="1681349024864" duration="397000" />
+      <workItem from="1681354494583" duration="15000" />
+      <workItem from="1681411322221" duration="74000" />
+      <workItem from="1681440066944" duration="5046000" />
+      <workItem from="1681468011362" duration="8076000" />
+      <workItem from="1681514289434" duration="10082000" />
+      <workItem from="1681575336939" duration="5837000" />
+      <workItem from="1681687164589" duration="40000" />
+      <workItem from="1682212650905" duration="12000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

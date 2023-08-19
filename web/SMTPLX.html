@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+          content="Pagina Tutorial sobre la instalación de Linux Server y algunos de sus servicios">
+    <meta name="author" content="MelissaBarrera">
+
+    <!-- Website Title -->
+    <title>Linux Server</title>
+
+    <!-- Styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Favicon  -->
+    <link rel="icon" type="image/x-icon" href="images/lg.png"/>
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+<!-- Preloader -->
+<div class="spinner-wrapper" style="background-color: #A5FFF3">
+    <div class="spinner">
+        <div class="bounce1" style="background-color: white"></div>
+        <div class="bounce2" style="background-color: white"></div>
+        <div class="bounce3" style="background-color: white"></div>
+    </div>
+</div>
+<!-- end of preloader -->
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" style="background-color: #A5FFF3">
+    <div class="container">
+        <a class="navbar-brand logo-image" href="principalLX.html"><img src="images/logoLinux.png"
+                                                                        style="width:200px; height: 80px"></a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="index.html">Página principal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="principalLX.html">Inicio Linux Server<span class="sr-only">(current)</span></a>
+                </li>
+
+                <!-- Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">Tutorial Linux Server</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="instalacionLX.html"><span class="item-text">Instalación</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="configuracionLX.html"><span class="item-text">Configuración Inicial</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="DNSLX.html"><span class="item-text">DNS</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="DHCPLX.html"><span class="item-text">DHCP</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="FTPLX.html"><span class="item-text">FTP</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="SMTPLX.html"><span class="item-text">SMTP</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="HTTPLX.html"><span class="item-text">HTTP</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+            </ul>
+        </div>
+    </div> <!-- end of container -->
+</nav> <!-- end of navbar -->
+<!-- end of navigation -->
+
+<!-- Header -->
+<header id="header" class="ex-header" style="background-color: #A5FFF3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>SERVIDOR SMTP</h1>
+                <p class="p-large">SMTP es un protocolo utilizado para el envío de correos electrónicos desde un servidor
+                    a otro servidor o cliente de correo electrónico.<br><br>
+                    En un servidor Linux, SMTP es utilizado por el servidor de correo electrónico para enviar correos
+                    electrónicos salientes. El servidor de correo electrónico recibe los correos electrónicos a través del
+                    protocolo POP3 o IMAP y los entrega a los clientes de correo electrónico. Además, los servidores de
+                    correo electrónico utilizan el protocolo SMTP para comunicarse entre sí y entregar los correos
+                    electrónicos a sus destinatarios.
+                </p>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</header> <br>
+<!-- end of header -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/SMTP/SMTP0.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Entrar a la <b>terminal</b> de linux y logearse como super usuario con el comando
+                        <b>su -l</b>. Luego con el comando <b>apt-get install postfix</b> se descargan los archivos para el
+                        servicio de correo electrónico en Linux server.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/SMTP/SMTP1.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">Automaticamente se ejectutará el programa de configuración de postfix, dar clic
+                    en <b>Aceptar</b></p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/SMTP/SMTP2.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Seleccionar que el servicio de correo electónico funcione como un <b>Sitio de
+                        Internet</b> para que este funcione con la IP y el dominio del Linux server.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/SMTP/SMTP3.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">Finalmente, se configura el dominio de uso en el servicio de correo electrónico
+                    y se da clic en <b>Aceptar</b>.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/SMTP/SMTP4.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Desde la terminar como super usuario, ejecutar el comando <b>apt-get install
+                    dovecot-core dovecot-pop3d</b> para instalar el protocolo POP3 que permite el funcionamiento del
+                        servicio de correo instalado con postfix.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/SMTP/SMTP5.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">Acceder al archivo <b>/etc/postfix/main.cf</b> y configurar la linea de
+                    compatibility_level = 3.6.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/SMTP/SMTP6.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Dentro del mismo archivo /etc/postfix/main.cf verificar que las configuraciones
+                    del servidor coincidan con el dominio configurado en postfix.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/SMTP/SMTP7.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">Acceder al archivo <b>/etc/dovecot/conf.d/10-ssl.conf</b> y cambiar que la linea
+                    sss = no y validar que las lineas pertienentes esten descomentadas.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/SMTP/SMTP8.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Acceder al archivo <b>/etc/dovecot/conf.d/10-auth.conf</b> y modificar la linea
+                    disable_plaintext_auth = no y validar que las otras lineas esten descomentadas y su valor coincida.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/SMTP/SMTP9.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">Acceder al archivo <b>/etc/dovecot/conf.d/10-mail.conf</b> y validar que las lineas
+                        pertinentes esten descomentadas y su valor coincida segun la imagen.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/SMTP/SMTP10.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Dentro del mismo archivo /etc/dovecot/conf.d/10-mail.conf validar que la linea
+                    mail_privileged_group = mail y que las lineas descomentadas coincidan.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 30rem;">
+                <img src="images/LX/SMTP/SMTP11.png" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text">Finalmente, reiniciar el servidor SMTP y el servicio POP3 con los comandos
+                        <b>service postfix restart</b> y <b>service dovecot restart</b> y verificar que su estado sea activo.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+</div>
+
+<!-- Copyright -->
+<svg class="footer-frame" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+     viewBox="0 0 1920 79">
+    <defs>
+        <style>.cls-2 {
+            fill: #A5FFF3;
+        }</style>
+    </defs>
+    <title>footer-frame</title>
+    <path class="cls-2"
+          d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z"
+          transform="translate(0 -0.188)"></path>
+</svg>
+<div class="copyright" style="background-color: #A5FFF3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="p-small">Copyright © 2023. Create by Melissa Barrera</p>
+            </div> <!-- end of col -->
+        </div> <!-- enf of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of copyright -->
+<!-- end of copyright -->
+
+
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+<script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>

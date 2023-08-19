@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+          content="Pagina Tutorial sobre la instalación de Windows Server y algunos de sus servicios">
+    <meta name="author" content="MelissaBarrera">
+
+    <!-- Website Title -->
+    <title>Windows Server</title>
+
+    <!-- Styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Favicon  -->
+    <link rel="icon" type="image/x-icon" href="images/lg.png"/>
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+<!-- Preloader -->
+<div class="spinner-wrapper">
+    <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+</div>
+<!-- end of preloader -->
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+        <a class="navbar-brand logo-image" href="principalWN.html"><img src="images/logo.png"
+                                                                  style="width:200px; height: 50px"></a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="index.html">Página principal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="principalWN.html">Inicio Windows Server<span class="sr-only">(current)</span></a>
+                </li>
+
+                <!-- Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">Tutorial Windows Server</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="instalaciónWN.html"><span class="item-text">Instalación</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="configuraciónWN.html"><span class="item-text">Configuración Inicial</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="DNSWN.html"><span class="item-text">DNS</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="DHCPWN.html"><span class="item-text">DHCP</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="FTPWN.html"><span class="item-text">FTP</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="SMTPWN.html"><span class="item-text">SMTP</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="HTTPWN.html"><span class="item-text">HTTP</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+            </ul>
+        </div>
+    </div> <!-- end of container -->
+</nav> <!-- end of navbar -->
+<!-- end of navigation -->
+
+
+<!-- Header -->
+<header id="header" class="header">
+    <div class="header-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-5">
+                    <div class="text-container">
+                        <h1>WINDOWS SERVER</h1>
+                        <p class="p-large">Sistema operativo de servidor de confianza utilizado por muchas empresas para
+                            gestionar sus redes y servidores con seguridad y eficiencia</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 col-xl-7">
+                    <div class="image-container">
+                        <div class="img-wrapper">
+                            <img class="img-fluid" src="images/principal.png" alt="alternative">
+                        </div> <!-- end of img-wrapper -->
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of header-content -->
+</header> <!-- end of header -->
+<svg class="header-frame" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+     viewBox="0 0 1920 310">
+    <defs>
+        <style>.cls-1 {
+            fill: #FFBFF6;
+        }</style>
+    </defs>
+    <title>header-frame</title>
+    <path class="cls-1"
+          d="M0,283.054c22.75,12.98,53.1,15.2,70.635,14.808,92.115-2.077,238.3-79.9,354.895-79.938,59.97-.019,106.17,18.059,141.58,34,47.778,21.511,47.778,21.511,90,38.938,28.418,11.731,85.344,26.169,152.992,17.971,68.127-8.255,115.933-34.963,166.492-67.393,37.467-24.032,148.6-112.008,171.753-127.963,27.951-19.26,87.771-81.155,180.71-89.341,72.016-6.343,105.479,12.388,157.434,35.467,69.73,30.976,168.93,92.28,256.514,89.405,100.992-3.315,140.276-41.7,177-64.9V0.24H0V283.054Z"/>
+</svg>
+<!-- end of header -->
+
+<!-- Description -->
+<div class="cards-1">
+    <div class="container">
+        <div class="row" style="background-color: #F6F1FF">
+            <div class="col-lg-12">
+                <div class="above-heading">¿QUÉ ES?</div>
+                <br>
+                <h5>Windows Server es un sistema operativo de servidor desarrollado por Microsoft. Es un sistema
+                    operativo altamente personalizable y escalable que se utiliza para alojar y gestionar aplicaciones
+                    y servicios en red en una amplia gama de entornos empresariales. Windows Server ofrece una variedad
+                    de características y herramientas que lo hacen fácil de usar y administrar, y se ha convertido en
+                    una opción popular para muchas empresas.</h5>
+            </div> <!-- end of col -->
+        </div>
+        <br> <!-- end of row -->
+        <div class="row" style="background-color: #F6F1FF">
+            <div class="col-lg-12">
+                <div class="above-heading">OBJETIVO</div>
+                <br>
+                <h5>El objetivo principal de Windows Server es proporcionar una plataforma segura y estable para alojar
+                    y gestionar aplicaciones y servicios en red en una variedad de entornos empresariales. Otros
+                    objetivos de Windows Server incluyen:<br><br>
+                    <ul>
+                        <li>Proporcionar herramientas de administración y monitoreo fáciles de usar para simplificar
+                            la gestión de servidores y redes.
+                        </li>
+                        <li>Ofrecer una amplia compatibilidad con software y hardware de terceros.</li>
+                        <li>Proporcionar un alto grado de escalabilidad y personalización para satisfacer las
+                            necesidades
+                            específicas de cada empresa.
+                        </li>
+                    </ul>
+                </h5>
+            </div> <!-- end of col -->
+        </div>
+        <br><!-- end of row -->
+        <div class="row" style="background-color: #F6F1FF">
+            <div class="col-lg-12">
+                <div class="above-heading">USOS</div>
+                <br>
+                <h5>Windows Server se utiliza en una variedad de entornos empresariales para alojar y gestionar
+                    aplicaciones y servicios en red. Algunos ejemplos de usos comunes de Windows Server
+                    incluyen:<br><br>
+                    <ul>
+                        <li>Alojamiento de sitios web y aplicaciones web.</li>
+                        <li>Alojamiento de servicios de correo electrónico y colaboración.</li>
+                        <li>Alojamiento de bases de datos y aplicaciones de negocio.</li>
+                        <li>Gestión de la red y los sistemas de seguridad.</li>
+                    </ul>
+                </h5>
+            </div> <!-- end of col -->
+        </div>
+        <br> <!-- end of row -->
+        <div class="row" style="background-color: #F6F1FF">
+            <div class="col-lg-6">
+                <div class="above-heading">VENTAJAS</div>
+                <br>
+                <h5>
+                    <ul>
+                        <li>Amplia compatibilidad con software y hardware de terceros.</li>
+                        <li>Herramientas de administración y monitoreo fáciles de usar.</li>
+                        <li>Alta escalabilidad y personalización.</li>
+                        <li>Soporte de virtualización de servidor.</li>
+                        <li>Alto grado de seguridad y fiabilidad.</li>
+                    </ul>
+                </h5>
+                </h5>
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <div class="above-heading">DESVENTAJAS</div>
+                <br>
+                <h5>
+                    <ul>
+                        <li>Costo relativamente alto en comparación con otros sistemas operativos.</li>
+                        <li>Requiere un hardware robusto para funcionar correctamente.</li>
+                        <li>Puede ser más complicado de configurar y administrar que otros sistemas operativos.</li>
+                        <li>Requiere una licencia de usuario o de servidor para cada usuario o dispositivo que se
+                            conecte al servidor.
+                        </li>
+                    </ul>
+                </h5>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of cards-1 -->
+<!-- end of description -->
+
+<!-- Copyright -->
+<svg class="footer-frame" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+     viewBox="0 0 1920 79">
+    <defs>
+        <style>.cls-2 {
+            fill: #FFBFF6;
+        }</style>
+    </defs>
+    <title>footer-frame</title>
+    <path class="cls-2"
+          d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z"
+          transform="translate(0 -0.188)"></path>
+</svg>
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="p-small">Copyright © 2023. Create by Melissa Barrera</p>
+            </div> <!-- end of col -->
+        </div> <!-- enf of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of copyright -->
+<!-- end of copyright -->
+
+
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+<script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
